@@ -23,7 +23,7 @@ function mostrarProductos(data) {
 
 		const nombreProductoEl =
 			tplEl.content.querySelector(".nombre-producto");
-		nombreProductoEl.textContent = prod["title"].substring(0, 55) + "...";
+		nombreProductoEl.textContent = prod["title"].substring(0, 45) + "...";
 
 		const estadoProductoEl =
 			tplEl.content.querySelector(".estado-producto");

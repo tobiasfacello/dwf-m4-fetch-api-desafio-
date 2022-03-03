@@ -21,14 +21,16 @@ body {
 	height: 70px;
 }
 
-.busqueda {
+.formulario-busqueda {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	min-width: 320px;
 	width: 510px;
 }
 
 .buscador {
+	min-width: 120px;
 	width: 375px;
 	height: 45px;
 	border: 1px solid #000000;
@@ -37,12 +39,19 @@ body {
 	font-size: 18px;
 }
 
+@media (max-width: 375px) {
+	.buscador {
+		font-size: 16px;
+	}
+}
+
 .buscador:hover,
 .boton:hover {
 	background-color: #d3d3d3;
 }
 
 .boton {
+	min-width: 100px;
 	width: 120px;
 	height: 45px;
 	border: 1px solid #000000;
@@ -52,9 +61,15 @@ body {
 	font-weight: 700;
 }
 
+@media (max-width: 375px) {
+	.boton {
+		font-size: 14px;
+	}
+}
+
 .p-resultados {
 	margin: 20px auto;
-	width: 510px;
+	max-width: 510px;
 }
 
 /** Estilos de template */
@@ -65,7 +80,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	width: 510px;
+	max-width: 510px;
 }
 
 .product-card {
@@ -96,6 +111,12 @@ body {
 	font-size: 16px;
 }
 
+@media (max-width: 375px) {
+	.nombre-producto {
+		font-size: 12px;
+	}
+}
+
 .p-estado {
 	margin: 2.5px 0;
 	font-size: 14px;
@@ -109,6 +130,12 @@ body {
 .precio {
 	font-size: 18px;
 	color: #5791a4;
+}
+
+@media (max-width: 375px) {
+	.precio {
+		font-size: 16px;
+	}
 }
 
 .estado-producto,

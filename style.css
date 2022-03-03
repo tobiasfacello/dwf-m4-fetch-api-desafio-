@@ -1,0 +1,118 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+
+.header {
+	width: 100%;
+	height: 70px;
+	background-color: #fff159;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+}
+
+.busqueda {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 510px;
+}
+
+.buscador {
+	width: 375px;
+	height: 45px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.buscador:hover,
+.boton:hover {
+	background-color: #d3d3d3;
+}
+
+.boton {
+	width: 120px;
+	height: 45px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.p-resultados {
+	margin: 20px auto;
+	width: 510px;
+}
+
+/** Estilos de template */
+
+.results-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 510px;
+}
+
+.product-card {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 130px;
+	margin-bottom: 15px;
+	padding: 5px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+}
+
+.img-producto {
+	max-height: 100px;
+	max-width: 130px;
+}
+
+.info-producto {
+	width: auto;
+	padding: 0 20px;
+}
+
+.nombre-producto {
+	margin-top: 0px;
+	margin-bottom: 2.5px;
+	font-size: 16px;
+}
+
+.p-estado {
+	margin: 2.5px 0;
+	font-size: 14px;
+}
+
+.p-ventas {
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+.precio {
+	font-size: 18px;
+	color: #5791a4;
+}
+
+.estado-producto,
+.cant-ventas,
+.precio {
+	font-weight: bold;
+}

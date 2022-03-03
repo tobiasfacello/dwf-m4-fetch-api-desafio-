@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script async src="./index.js"></script>
+    <title>Capítulo 6 - Módulo 4</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="form-container">
+            <form method="get" class="formulario-busqueda">
+                <input class="buscador" type="text" placeholder="Producto a buscar...">
+                <button class="boton" type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <p class="p-resultados">Resultados: <span class="cant-resultados"></span></p>
+    <div class="results-container">
+    </div>
+
+    <template class="tpl-productos">
+        <div class="product-card">
+            <img class="img-producto">
+            <div class="info-container">
+                <div class="info-producto">
+                    <h3 class="nombre-producto"></h3>
+                    <p class="p-estado">Estado: <span class="estado-producto">
+                        </span></p>
+                    <p class="p-ventas">Vendidos: <span class="cant-ventas"></span></p>
+                </div>
+            </div>
+            <span class="precio"></span>
+        </div>
+    </template>
+</body>
+
+</html>
